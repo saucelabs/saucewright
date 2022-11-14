@@ -1,0 +1,18 @@
+stages:
+  - test
+
+# Cache modules using lock file
+cache:
+  key:
+    files:
+      - package-lock.json
+  paths:
+    - .npm/
+
+test:
+  tags: [ k8s, multi-runner, build, sjc3 ]
+  image: node:16
+  stage: test
+  script:
+    - npm i --cache .npm --prefer-offline
+    - npm run lint
