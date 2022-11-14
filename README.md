@@ -6,6 +6,13 @@ This project is a proof of concept and as such does not represent a fully finish
 
 Do NOT use this in production.
 
+All the warnings out of the way, how does it work? `saucewright` inspects your local _playwright.config.js/ts_ file
+and generates a _config.yml_ file that saucectl understands, which it then invokes with. All this happens in one step.
+
+This is very convenient for running adhoc tests, especially where saucectl is not yet configured. The general idea is
+that `saucewright` mimics (in terms of flags/args) the playwright CLI almost 1:1, so that the user has the least amount
+of friction getting started with playwright on Sauce Labs.
+
 # TODO
 
 This list is not exhaustive, but gives you an idea of what's still missing/possible.
