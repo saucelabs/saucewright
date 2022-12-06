@@ -37,7 +37,7 @@ program
       apiVersion: 'v1alpha',
       kind: 'playwright',
       playwright: {
-        version: '1.27.1', // TODO determine version dynamically using semver
+        version: '1.28.1', // TODO determine version dynamically using semver
         configFile: path.basename(resolvedConfigFile)
       },
       rootDir: './',

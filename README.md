@@ -13,6 +13,8 @@ This is very convenient for running adhoc tests, especially where saucectl is no
 that `saucewright` mimics (in terms of flags/args) the playwright CLI almost 1:1, so that the user has the least amount
 of friction getting started with playwright on Sauce Labs.
 
+We are actively looking for feedback and would love to [hear from you](https://github.com/saucelabs/saucewright/discussions)!
+
 # TODO
 
 This list is not exhaustive, but gives you an idea of what's still missing/possible.
@@ -69,7 +71,7 @@ Execute the following commands in your local playwright project.
 #### Install saucewright as Dependency
 
 ```shell
-npm i /path/to/saucewright
+npm i @saucelabs/saucewright
 ```
 
 #### Install saucectl
