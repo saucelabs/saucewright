@@ -8,6 +8,7 @@
     "build": "tsc",
     "watch": "tsc -w",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "e2e": "cd tests/e2e/ && node ../.. test",
     "lint": "eslint .",
     "release": "tsc && release-it --github.release",
     "release:ci": "tsc && npm run release -- --ci --no-git.requireCleanWorkingDir",
@@ -51,6 +52,7 @@
     "@typescript-eslint/eslint-plugin": "^5.43.0",
     "@typescript-eslint/parser": "^5.43.0",
     "release-it": "^15.5.1",
-    "typescript": "^4.8.4"
+    "typescript": "^4.8.4",
+    "saucectl": "^0.114.0"
   }
 }
