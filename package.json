@@ -8,7 +8,12 @@
     "build": "tsc",
     "watch": "tsc -w",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "release": "tsc && release-it --github.release",
+    "release:ci": "tsc && npm run release -- --ci --no-git.requireCleanWorkingDir",
+    "release:patch": "npm run release -- patch",
+    "release:minor": "npm run release -- minor",
+    "release:major": "npm run release -- major"
   },
   "publishConfig": {
     "access": "public"
