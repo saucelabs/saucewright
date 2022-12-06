@@ -48,27 +48,11 @@ Options:
   -h, --help                   display help for command
 ```
 
-### Setup Repo
-
-Since this package is not published to any registry (for now), you have to set it up locally after cloning the repo.
-
-#### Install Dependencies
-
-```shell
-npm i
-```
-
-#### Build Project
-
-```shell
-npm run build
-```
-
 ### Setup Playwright Project
 
-Execute the following commands in your local playwright project. 
+Execute the following commands in your playwright project. 
 
-#### Install saucewright as Dependency
+#### Install saucewright
 
 ```shell
 npm i @saucelabs/saucewright
