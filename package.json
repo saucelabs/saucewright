@@ -1,5 +1,5 @@
 {
-  "name": "saucewright",
+  "name": "@saucelabs/saucewright",
   "version": "0.0.0",
   "description": "CLI for dynamically configuring saucectl via playwright config files.",
   "bin": "src/index.js",
