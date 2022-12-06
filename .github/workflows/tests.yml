@@ -44,7 +44,9 @@ jobs:
           cache: npm
 
       - name: Install Dependencies
-        run: npm ci
+        run: | 
+          npm ci
+          npm i -g saucectl
 
       - name: Build
         run: npm run build

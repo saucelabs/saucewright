@@ -63,7 +63,7 @@ npm i @saucelabs/saucewright
 Since `saucewright` requires `saucectl`:
 
 ```shell
-npm i saucectl
+npm i -g saucectl
 ```
 
 #### Run Tests
